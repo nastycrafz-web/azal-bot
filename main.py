@@ -291,7 +291,7 @@ def get_message():
 @app.route('/')
 def set_webhook():
     bot.remove_webhook()
-    url = f"https://{request.host}/{TOKEN}
+    url = f"https://{request.host}/{TOKEN}"
     bot.set_webhook(url=url)
     return "Webhook успешно установлен!", 200
 
